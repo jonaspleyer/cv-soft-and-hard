@@ -11,7 +11,7 @@ A CV template written in Typst.
 
 ## Section labels & Entries
 ```typst
-#section[Profile]
+#section("Profile")
 Software engineer and computational scientist with expertise in Rust and Python.
 I build high-quality software for scientific computing and contribute actively to the Rust
 open-source ecosystem.
