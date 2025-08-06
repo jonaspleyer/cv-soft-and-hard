@@ -47,16 +47,19 @@
 
 #let typst-logo = {
   icon-template(
-    "icons/typst-logo.jpg",
+    "icons/Typst-t.svg",
     "Typst Icon",
     clip: true,
-    radius: 0.1em
+    radius: 0.1em,
+    fill: gradient.linear(rgb("#5bdaa7"), rgb("#239caf"), angle: 45deg),
+    inset: 2pt,
+    height: 1em - 4pt
   )
 }
 
 #let hugo = {
   icon-template(
-    "icons/hugo-favicon.png",
+    "icons/Hugo.svg",
     "Hugo Icon"
   )
 }
