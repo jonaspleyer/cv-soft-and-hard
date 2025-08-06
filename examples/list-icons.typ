@@ -1,6 +1,7 @@
 #import "../icons.typ": *
 
-#set page("a8")
+#set page("a10", flipped: true)
+#set align(center)
 
 #rust
 #cplain
