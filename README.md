@@ -10,7 +10,7 @@ A CV template written in Typst.
 ```
 
 ## Section labels & Entries
-```
+```typst
 #section[Profile]
 Software engineer and computational scientist with expertise in Rust and Python.
 I build high-quality software for scientific computing and contribute actively to the Rust
@@ -31,7 +31,7 @@ I enjoy working in teams that emphasize functionality and reliability and use ex
 ```
 
 ## Icons for Programming Languages and other Tools
-```
+```typst
 #import "@preview:cv-soft-and-hard": rust, cpp
 
 #section("Selected Projects")
