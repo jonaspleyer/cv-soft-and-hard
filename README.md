@@ -1,6 +1,11 @@
 # cv-soft-and-hard
 A CV template written in Typst.
 
+Example CV
+
+![Full Example](examples/full-example.svg)
+![Full Example 2](examples/full-example-2.svg)
+
 ## Predefined styling scheme
 ```typst
 #import "cv-soft-and-hard/template.typ": styling, section, entry
