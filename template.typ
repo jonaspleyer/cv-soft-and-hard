@@ -1,0 +1,54 @@
+#import "icons.typ": *
+
+#let global_theme = state(
+  "theme",
+  ("accent": black)
+)
+// rgb(250, 0, 0)
+
+#let styling(body, accent: none) = {
+  if accent != none {
+    global_theme.update(pt => {
+      pt.insert("accent", accent)
+    })
+  }
+  context {
+    let theme = global_theme.get()
+    let accent = theme.at("accent")
+    show link: ct => underline(ct, background: true, evade: true, stroke: accent)
+    set page(margin: (left: 2.5cm, right: 2.5cm, top: 2cm))
+    body
+  }
+}
+
+#let section(title) = {
+  v(4pt)
+  grid(
+    columns: 2,
+    [== #title],
+    context {
+      let accent = global_theme.get().at("accent")
+      line(start: (0% + 2pt, 0% + 8pt), length: 100%, stroke: accent)
+    },
+  )
+}
+
+#let subsection(title) = {
+  [=== #title]
+}
+
+#let entry(left-text, right-text, description: none) = {
+  grid(
+    column-gutter: 0pt,
+    row-gutter: 0.6em,
+    columns: (1fr, auto),
+    align(left, [#left-text]),
+    align(right, [#right-text]),
+    if description != none {
+      grid.cell(
+        colspan: 2,
+        [#description]
+      )
+    }
+  )
+}
