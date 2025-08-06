@@ -47,3 +47,6 @@ I enjoy working in teams that emphasize functionality and reliability and use ex
   [_08/2022_]
 )
 ```
+
+### List of all currently supported Icons
+![List of Icons](examples/list-icons.pdf)
