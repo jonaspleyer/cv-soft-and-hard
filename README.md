@@ -49,4 +49,4 @@ I enjoy working in teams that emphasize functionality and reliability and use ex
 ```
 
 ### List of all currently supported Icons
-![List of Icons](examples/list-icons.png)
+![List of Icons](examples/list-icons.svg)
