@@ -21,16 +21,21 @@
   }
 }
 
-#let section(title) = {
+#let section(title, note: none) = {
   v(4pt)
-  grid(
+  box(grid(
     columns: 2,
-    [== #title],
+    [
+      #heading(title, level: 2)
+    ],
     context {
       let accent_color = global_theme.get().at("accent_color")
       line(start: (0% + 2pt, 0% + 8pt), length: 100%, stroke: accent_color)
     },
-  )
+  ))
+  if note != none {
+    text(note, size: 7pt)
+  }
 }
 
 #let subsection(title) = {
