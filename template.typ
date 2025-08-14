@@ -2,20 +2,20 @@
 
 #let global_theme = state(
   "theme",
-  ("accent": black)
+  ("accent_color": black)
 )
 // rgb(250, 0, 0)
 
-#let styling(body, accent: none) = {
-  if accent != none {
+#let styling(body, accent_color: none) = {
+  if accent_color != none {
     global_theme.update(pt => {
-      pt.insert("accent", accent)
+      pt.insert("accent_color", accent_color)
     })
   }
   context {
     let theme = global_theme.get()
-    let accent = theme.at("accent")
-    show link: ct => underline(ct, background: true, evade: true, stroke: accent)
+    let accent_color = theme.at("accent_color")
+    show link: ct => underline(ct, background: true, evade: true, stroke: accent_color)
     set page(margin: (left: 2.5cm, right: 2.5cm, top: 2cm))
     body
   }
@@ -27,8 +27,8 @@
     columns: 2,
     [== #title],
     context {
-      let accent = global_theme.get().at("accent")
-      line(start: (0% + 2pt, 0% + 8pt), length: 100%, stroke: accent)
+      let accent_color = global_theme.get().at("accent_color")
+      line(start: (0% + 2pt, 0% + 8pt), length: 100%, stroke: accent_color)
     },
   )
 }
