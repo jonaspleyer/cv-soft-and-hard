@@ -1,14 +1,14 @@
 # cv-soft-and-hard
-A CV template written in Typst.
+A CV template written in Typst which keeps it minimalistic.
+It was designed with software and hardware people in mind (hence the name).
 
-Example CV
-
-![Full Example](examples/full-example.svg)
-![Full Example 2](examples/full-example-2.svg)
+![Template 1](template/main-1.svg)
+![Template 2](template/main-2.svg)
+![Template 3](template/main-3.svg)
 
 ## Predefined styling scheme
 ```typst
-#import "cv-soft-and-hard/template.typ": styling, section, entry
+#import "@preview:cv-soft-and-hard:0.1.0": styling, section, entry
 
 #set document(author: "Jonas Pleyer", title: "CV Jonas Pleyer")
 #show: styling
@@ -41,9 +41,26 @@ I enjoy working in teams that emphasize functionality and reliability and use ex
   ],
   [_since 08/2021_]
 )
-```
 
-![Readme Example 1](examples/readme1.svg)
+// ..
+
+#section("Education")
+#entry(
+  [
+    *University of Freiburg*\
+    Doctoral Candidate (Computational Systems Biology)\
+    // #text([Thesis: "_Agent-based Models in Cellular Systems_" (Christian Fleck)], size: 9pt)\
+    MSc. Physics (Theoretical Physics & Mathematics),\
+    #text([Thesis: "_Zero Values of the TOV Equation_" (Prof. Nadine Große)], size: 9pt)
+  ],
+  [\
+    _since 08/2021\ \
+    04/2020-07/2021_
+  ],
+)
+
+// ..
+```
 
 ## Icons for Programming Languages and other Tools
 ```typst
