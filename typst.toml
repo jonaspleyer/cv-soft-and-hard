@@ -8,6 +8,7 @@ entrypoint = "lib.typ"
 repository = "https://github.com/jonaspleyer/cv-soft-and-hard"
 homepage = "https://jonaspleyer.github.io/cv-soft-and-hard/"
 categories = ["CV"]
+exclude = [ "examples/*" ]
 
 [template]
 path = "template"
