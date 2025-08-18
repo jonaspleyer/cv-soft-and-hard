@@ -2,9 +2,9 @@
 A CV template written in Typst which keeps it minimalistic.
 It was designed with software and hardware people in mind (hence the name).
 
-![Template 1](template/main-1.svg)
-![Template 2](template/main-2.svg)
-![Template 3](template/main-3.svg)
+![Template 1](examples/main-1.svg)
+![Template 2](examples/main-2.svg)
+![Template 3](examples/main-3.svg)
 
 ## Predefined styling scheme
 ```typst
