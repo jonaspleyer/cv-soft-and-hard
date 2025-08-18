@@ -7,7 +7,7 @@ description = "Clean CV Template"
 entrypoint = "lib.typ"
 repository = "https://github.com/jonaspleyer/cv-soft-and-hard"
 homepage = "https://jonaspleyer.github.io/cv-soft-and-hard/"
-categories = ["CV"]
+categories = ["cv"]
 exclude = [ "examples/*" ]
 
 [template]
