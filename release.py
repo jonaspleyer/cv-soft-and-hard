@@ -28,6 +28,7 @@ def zip_templates(writer):
     path = Path("./template/")
     files = list(path.rglob("*.typ"))
     files.extend(path.rglob("*.bib"))
+    files.extend(path.rglob("*.csl"))
     writer.write_to_zip_file(files)
 
 
