@@ -6,7 +6,6 @@ license = "MIT"
 description = "Clean CV Template"
 entrypoint = "lib.typ"
 repository = "https://github.com/jonaspleyer/cv-soft-and-hard"
-homepage = "https://github.com/jonaspleyer/cv-soft-and-hard"
 categories = ["cv"]
 exclude = [ "examples/*" ]
 
