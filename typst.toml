@@ -13,4 +13,4 @@ exclude = [ "examples/*" ]
 [template]
 path = "template"
 entrypoint = "main.typ"
-thumbnail = "examples/main-1.svg"
+thumbnail = "examples/main-1.png"
