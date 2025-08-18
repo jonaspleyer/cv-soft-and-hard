@@ -1,21 +1,21 @@
 #import "icons.typ": *
 
-#let global_theme = state(
+#let global-theme = state(
   "theme",
-  ("accent_color": black)
+  ("accent-color": black)
 )
 // rgb(250, 0, 0)
 
-#let styling(body, accent_color: none) = {
-  if accent_color != none {
+#let styling(body, accent-color: none) = {
+  if accent-color != none {
     global_theme.update(pt => {
-      pt.insert("accent_color", accent_color)
+      pt.insert("accent-color", accent-color)
     })
   }
   context {
     let theme = global_theme.get()
-    let accent_color = theme.at("accent_color")
-    show link: ct => underline(ct, background: true, evade: true, stroke: accent_color)
+    let accent-color = theme.at("accent-color")
+    show link: ct => underline(ct, background: true, evade: true, stroke: accent-color)
     set page(margin: (left: 2.5cm, right: 2.5cm, top: 2cm))
     body
   }
@@ -29,8 +29,8 @@
       #heading(title, level: 2)
     ],
     context {
-      let accent_color = global_theme.get().at("accent_color")
-      line(start: (0% + 2pt, 0% + 8pt), length: 100%, stroke: accent_color)
+      let accent-color = global_theme.get().at("accent-color")
+      line(start: (0% + 2pt, 0% + 8pt), length: 100%, stroke: accent-color)
     },
   ))
   if note != none {
