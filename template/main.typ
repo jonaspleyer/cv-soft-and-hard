@@ -1,5 +1,4 @@
-// #import "@preview/cv-soft-and-hard:0.1": styling, section, entry, subsection, rust, cpp, python, typst-logo, hugo, typescript
-#import "../template.typ": styling, section, entry, subsection, rust, cpp, python, typst-logo, hugo, typescript
+#import "@preview/cv-soft-and-hard:0.1.0": styling, section, entry, subsection, rust, cpp, python, typst-logo, hugo, typescript
 
 #set document(author: "Jonas Pleyer", title: "CV Jonas Pleyer")
 #show: styling
