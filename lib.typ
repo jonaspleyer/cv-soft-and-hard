@@ -8,12 +8,12 @@
 
 #let styling(body, accent-color: none) = {
   if accent-color != none {
-    global_theme.update(pt => {
+    global-theme.update(pt => {
       pt.insert("accent-color", accent-color)
     })
   }
   context {
-    let theme = global_theme.get()
+    let theme = global-theme.get()
     let accent-color = theme.at("accent-color")
     show link: ct => underline(ct, background: true, evade: true, stroke: accent-color)
     set page(margin: (left: 2.5cm, right: 2.5cm, top: 2cm))
@@ -29,7 +29,7 @@
       #heading(title, level: 2)
     ],
     context {
-      let accent-color = global_theme.get().at("accent-color")
+      let accent-color = global-theme.get().at("accent-color")
       line(start: (0% + 2pt, 0% + 8pt), length: 100%, stroke: accent-color)
     },
   ))
